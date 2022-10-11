@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.Master.cs" Inherits="prjERP.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <!--頁首-->
+<header>
+    <!--巡覽列-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="img/OIP.jpg" style="width:40px;" />
+        </a>
+        <button class="navbar-toggler" type="button"
+			data-toggle="collapse"
+			data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent"
+			aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse"
+			id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="01index.aspx">首頁</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="02product_data.aspx">產品資料</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="03company_data.aspx">廠商資料</a>
+                </li>
+                <li class="nav-item">
+                      <a class="nav-link" href="04sell_data.aspx">銷貨資料</a>
+                </li>
+                <li class="nav-item">
+                      <a class="nav-link" href="05buy_data.aspx">進貨資料</a>
+                </li>
+                <li class="nav-item">
+                      <a class="nav-link" href="06warehouse_data.aspx">倉儲資料</a>
+                </li>
+                <li class="nav-item">
+                      <a class="nav-link" href="07IIF.aspx">部門人事資料</a>
+                </li>
+                <li class="nav-item">
+                      <a class="nav-link" href="08finance_class.aspx">財務類別登錄</a>
+                </li>
+                <li class="nav-item">
+                      <a class="nav-link" href="09details.aspx">報表</a>
+                </li>
+              </ul>
+              
+          </div>
+      </nav>
+  </header>
+
+        <div style="margin-top:40px;margin-bottom:40px;">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    
+         <!--頁尾-->
+     <footer class="container">
+         <p>&copy; 2021 ERP專題製作</p>
+     </footer>
+    
+    </form>
+</body>
+</html>
